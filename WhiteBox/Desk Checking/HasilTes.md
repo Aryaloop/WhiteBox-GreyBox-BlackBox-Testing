@@ -1,7 +1,7 @@
 
 | Bagian           | Komponen         | Deskripsi Pemeriksaan                                               | Hasil Pemeriksaan                              | Screenshot Code                         | Screenshot Tampilan                   |
 |------------------|------------------|---------------------------------------------------------------------|------------------------------------------------|-----------------------------------------|---------------------------------------|
-| Autentikasi      | `register()`     | Input disimpan di DB dengan `generate_password_hash()`              | ✔️ Password tersimpan dalam bentuk hash        | ![](login.php)              | ![](tamp1.png)            |
+| Autentikasi      | `register()`     | Input disimpan di DB dengan `generate_password_hash()`              | ✔️ Password tersimpan dalam bentuk hash        | ![](login.jpg)              | ![](tamp1.png)            |
 | Autentikasi      | `login()`        | Password diverifikasi dengan `check_password_hash()`                | ✔️ Login berhasil jika password benar          | ![](code2.png)              | ![](tamp2.png)            |
 | Manajemen Tugas  | `add_task()`     | Waktu Jakarta (`get_jakarta_time()`) disimpan dalam ISO format      | ✔️ Timestamp disimpan dengan benar             | ![](code3.png)              | ![](tamp3.png)            |
 | Manajemen Tugas  | `delete_task()`  | Hanya user dengan `user_id` yang sesuai bisa menghapus task         | ✔️ Hanya task milik sendiri yang bisa dihapus  | ![](code4.png)              | ![](tamp4.png)            |
