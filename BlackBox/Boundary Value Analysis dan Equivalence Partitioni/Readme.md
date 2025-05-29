@@ -14,38 +14,3 @@
 | 10      | Verifikasi Email                 | Kode: `da12ac`                        | Masukkan kode verifikasi yang benar                 | Status `is_verified` menjadi 1                     | Belum diketahui (tergantung implementasi)               | Perlu uji         |
 | 11      | Reset Password                   | Email valid                           | Minta reset password melalui email                  | Token reset dan expiry tercatat di DB              | Nilai `reset_token` dan `reset_token_expiry` masih NULL | Gagal/Tidak Diuji |
 | 12      | Validasi Nomor Telepon           | Input: `083104480855`                 | Masukkan nomor telepon dengan format Indonesia      | Diterima jika panjang dan format sesuai            | Nomor disimpan                                          | Lulus             |
-
-No
-Fiture Yang Di Uji
-Input
-Langkah Uji
-Hasil diharap
-Hasil Aktual
-Status
-B01
-Halaman Login
-tombol register
-klik tombol “Register”
-klik tombol “Register”
-MembukaHalaman “Register” 
-Halaman “Register” terbuka
-Lulus
-B02
-Halaman Login
-tombol “Forgot Password”
-klik tombol
-“Forgot Password”
-klik tombol
-“Forgot Password”
-MembukaHalaman “Forgot Password”
-Halaman “Forgot Password” terbuka
-Lulus
-B03
-Halaman Login
-Form usernam&Password
-Input&klik Form dengan username&Password yang benar
-Input&klik Form dengan username&Password yang benar
-dapat input form dan membuka halaman dashboard web
-dapat input form dan membuka halaman dashboard web
-Lulus
-
