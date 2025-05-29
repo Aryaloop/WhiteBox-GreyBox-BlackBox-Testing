@@ -1,0 +1,10 @@
+| Modul / File        | Vektor Uji Greybox                                                          | Hasil Uji (Rentan / Aman) | Catatan                                                             |
+| ------------------- | --------------------------------------------------------------------------- | ------------------------- | ------------------------------------------------------------------- |
+| login.php           | Login dengan email salah → respons berbeda dengan password salah?           | Rentan                    | Bisa digunakan untuk enumerasi akun (brute-force login)             |
+| register.php        | Submit email duplikat atau email tidak valid                                | Rentan                    | Tidak ada validasi email unik, tidak ada konfirmasi password        |
+| forgot-password.php | Spam form reset password dengan email acak / sama berulang                  | Rentan                    | Tidak ada throttling, validasi email minim                          |
+| reset-password.php  | Gunakan token reset lama atau kosong                                        | Rentan                    | Token tidak dicek expired, bisa reuse                               |
+| change-password.php | Kirim password lama salah, tapi sistem tetap mengubah password              | Rentan                    | Tidak ada verifikasi password lama sebelum ganti                    |
+| dashboard.php       | Akses langsung tanpa login (misalnya buka /dashboard.php lewat URL)         | Rentan                    | Tidak ada proteksi session. Siapa pun bisa akses tanpa login        |
+| profile.php         | Akses data user lain dengan mengubah user\_id di query (jika ada param URL) | Rentan                    | Tidak ada pembatasan ID user, berisiko IDOR                         |
+| auth.php            | Manipulasi sesi $\_SESSION\['user\_id'] di browser                          | Rentan                    | Tidak ada validasi user\_id terhadap database setiap kali digunakan |
