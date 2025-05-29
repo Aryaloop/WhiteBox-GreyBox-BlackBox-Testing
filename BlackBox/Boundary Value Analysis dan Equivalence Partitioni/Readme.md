@@ -1,5 +1,6 @@
 # Boundary Value Analysis (BVA)
 
+#Registrasi
 | **No** | **Fitur yang Diuji**             | **Input**                             | **Langkah Uji**                                     | **Hasil yang Diharapkan**                          | **Hasil Aktual**                                        | **Status**        |
 | ------ | -------------------------------- | ------------------------------------- | --------------------------------------------------- | -------------------------------------------------- | ------------------------------------------------------- | ----------------- |
 | 1      | Registrasi Pengguna              | Nama, Email, Username, Password, Dll. | Isi semua field dengan data valid dan klik “Daftar” | Akun berhasil dibuat dan disimpan di tabel `users` | Akun tersimpan dengan ID 6                              | Lulus             |
@@ -14,3 +15,13 @@
 | 10      | Verifikasi Email                 | Kode: `da12ac`                        | Masukkan kode verifikasi yang benar                 | Status `is_verified` menjadi 1                     | Belum diketahui (tergantung implementasi)               | Perlu uji         |
 | 11      | Reset Password                   | Email valid                           | Minta reset password melalui email                  | Token reset dan expiry tercatat di DB              | Nilai `reset_token` dan `reset_token_expiry` masih NULL | Gagal/Tidak Diuji |
 | 12      | Validasi Nomor Telepon           | Input: `083104480855`                 | Masukkan nomor telepon dengan format Indonesia      | Diterima jika panjang dan format sesuai            | Nomor disimpan                                          | Lulus             |
+
+
+#Halaman awal Login
+## 📋 Hasil Pengujian Fitur Login
+
+| No   | Fitur yang Diuji         | Input                         | Langkah Uji                                             | Hasil Diharapkan                                 | Hasil Aktual                                     | Status |
+|------|--------------------------|-------------------------------|----------------------------------------------------------|--------------------------------------------------|--------------------------------------------------|--------|
+| B01  | Halaman Login            | Tombol Register               | Klik tombol “Register”                                   | Membuka halaman “Register”                       | Halaman “Register” terbuka                       | Lulus  |
+| B02  | Halaman Login            | Tombol “Forgot Password”      | Klik tombol “Forgot Password”                            | Membuka halaman “Forgot Password”                | Halaman “Forgot Password” terbuka                | Lulus  |
+| B03  | Halaman Login            | Form Username & Password      | Input dan klik form dengan username & password yang benar | Dapat input form dan membuka halaman dashboard   | Dapat input form dan membuka halaman dashboard   | Lulus  |
