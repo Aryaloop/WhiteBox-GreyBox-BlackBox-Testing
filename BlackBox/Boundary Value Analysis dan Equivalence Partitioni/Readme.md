@@ -5,7 +5,7 @@
 
 | No   | Fitur yang Diuji        | Input               | Langkah Uji                                | Hasil Diharapkan                         | Hasil Aktual                               | Status |
 |------|--------------------------|---------------------|---------------------------------------------|-------------------------------------------|---------------------------------------------|--------|
-| A01  | Registrasi - Full Name   | padjrin fauzi       | Memasukkan nama "arya"                      | Nama dapat diinput                        | Nama dapat diinput                          | Lulus  |
+| A01  | Registrasi - Full Name   | padjrin fauzi       | Memasukkan nama "padjrin"                      | Nama dapat diinput                        | Nama dapat diinput                          | Lulus  |
 | A02  | Registrasi - Email       | padjrinf@gmail.com  | Menginput email dengan format benar         | Email dapat diinput                       | Email dapat diinput                         | Lulus  |
 | A03  | Registrasi - Email       | padjrinfgmail.com   | Menginput email tanpa simbol “@”            | Tampil pesan email tidak valid            | Sistem merespons “please include an @”      | Lulus  |
 | A04  | Registrasi - Address     | Bandung             | Menginput alamat                            | Alamat dapat diinput                      | Alamat dapat diinput                        | Lulus  |
