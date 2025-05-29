@@ -1,6 +1,6 @@
 # Boundary Value Analysis (BVA)
 
-#Registrasi
+# Registrasi
 | **No** | **Fitur yang Diuji**             | **Input**                             | **Langkah Uji**                                     | **Hasil yang Diharapkan**                          | **Hasil Aktual**                                        | **Status**        |
 | ------ | -------------------------------- | ------------------------------------- | --------------------------------------------------- | -------------------------------------------------- | ------------------------------------------------------- | ----------------- |
 | 1      | Registrasi Pengguna              | Nama, Email, Username, Password, Dll. | Isi semua field dengan data valid dan klik “Daftar” | Akun berhasil dibuat dan disimpan di tabel `users` | Akun tersimpan dengan ID 6                              | Lulus             |
@@ -17,8 +17,8 @@
 | 12      | Validasi Nomor Telepon           | Input: `083104480855`                 | Masukkan nomor telepon dengan format Indonesia      | Diterima jika panjang dan format sesuai            | Nomor disimpan                                          | Lulus             |
 
 
-#Halaman awal Login
-## 📋 Hasil Pengujian Fitur Login
+
+## 📋 Hasil Pengujian Halaman awal Login
 
 | No   | Fitur yang Diuji         | Input                         | Langkah Uji                                             | Hasil Diharapkan                                 | Hasil Aktual                                     | Status |
 |------|--------------------------|-------------------------------|----------------------------------------------------------|--------------------------------------------------|--------------------------------------------------|--------|
