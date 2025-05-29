@@ -30,3 +30,18 @@
 |------|----------------------------|-------------------|---------------------------------------------|----------------------------------------------------------|--------------------------------------------------------|--------|
 | C01  | Halaman Forgot Password    | Klik tombol       | Klik tombol “Send Reset Link”               | Tombol dapat ditekan dan reset link dikirim melalui email | Tombol dapat ditekan dan reset link dikirim melalui email | Lulus  |
 | C02  | Halaman Reset Password     | 12345678          | Input form new password                     | Input form new password dapat dilakukan                   | Input form new password dapat dilakukan                 | Lulus  |
+
+## Hasil Pengujian Fitur Sistem
+
+| Fitur yang Diuji       | Input / Data Uji      | Langkah Uji                                                       | Hasil Diharapkan                                             | Hasil Aktual | Status |
+|------------------------|------------------------|--------------------------------------------------------------------|---------------------------------------------------------------|--------------|--------|
+| Dashboard              | -                      | Klik menu “Dashboard” setelah login                               | Halaman dashboard tampil dengan daftar film populer           | Sesuai       | ✔️     |
+| Profile View           | -                      | Klik menu “Profile”                                               | Halaman profil pengguna tampil (nama, username, foto)         | Sesuai       | ✔️     |
+| Edit Profile           | Nama: Padjrin Fauzi    | Klik tombol 'Edit Profile', ubah nama, klik simpan                | Data berhasil diperbarui dan tampil di profil                 | Sesuai       | ✔️     |
+| Logout                 | -                      | Klik tombol 'Logout'                                              | Pengguna diarahkan ke halaman login                           | Sesuai       | ✔️     |
+| Pencarian Film         | Minecraft              | Ketik 'Minecraft' di kolom pencarian, klik tombol 'Search'        | Film 'A Minecraft Movie' ditampilkan                          | Sesuai       | ✔️     |
+| Pencarian Kosong       | xyzabc                 | Masukkan input pencarian yang tidak sesuai film manapun           | Tampilkan pesan 'tidak ditemukan' atau hasil kosong           | Sesuai       | ✔️     |
+| Rating Film            | Film dengan rating < 6 | Cek tampilan rating (misal: 5.3)                                   | Rating tampil dengan ikon bintang                             | Sesuai       | ✔️     |
+| Tahun Film Validasi    | Tahun: 2025            | Periksa apakah semua film menampilkan tahun rilis                 | Tahun rilis film ditampilkan di bawah judul                   | Sesuai       | ✔️     |
+| Gambar Film            | -                      | Lihat semua poster film pada dashboard                            | Semua gambar film tampil dengan proporsi yang sesuai          | Sesuai       | ✔️     |
+| Gagal Login Redirect   | -                      | Akses URL /dashboard.php tanpa sesi login                         | Dialihkan ke halaman login                                    | Sesuai       | ✔️     |
