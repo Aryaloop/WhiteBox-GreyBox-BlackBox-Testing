@@ -4,7 +4,7 @@
 | Autentikasi | `login()`                 | Password diverifikasi dengan `check_password_hash()`                                   | ✔️ Login berhasil jika password benar                                  | ![](logincode.png)           | ![](login.jpg)              |
 | Autentikasi | `sendVerificationEmail()` | Email verifikasi dikirim ke user dengan link berisi kode verifikasi unik               | ✔️ Email verifikasi berhasil dikirim ke alamat user                    | ![](verifCode.png)           | ![](verifikasi.png)         |
 | Autentikasi | `dashboard.php`           | Memastikan hanya user yang sudah login dan terverifikasi dapat mengakses dashboard. Data user ditampilkan sesuai `user_id` sesi | ✔️ Hanya user terautentikasi yang dapat mengakses, dan data tampil sesuai user | ![](dasCode.png)             | ![](das.png)          |
-| Autentikasi | reCAPTCHA (gabung) | Validasi captcha dilakukan di sisi klien sebelum submit, dan diverifikasi ulang di server dengan mengirim token ke Google | ✅ Submit dicegah jika checkbox belum dicentang<br>✅ Server menolak jika token tidak valid atau kosong | ![](![](![](![](verifCode.png)    |(![](verifCode.png)  |
+| Autentikasi | reCAPTCHA (gabung) | Validasi captcha dilakukan di sisi klien sebelum submit, dan diverifikasi ulang di server dengan mengirim token ke Google | ✅ Submit dicegah jika checkbox belum dicentang<br>✅ Server menolak jika token tidak valid atau kosong | ![](captchasukses.png)  |![](kodecap.png)  |
 
 
 
