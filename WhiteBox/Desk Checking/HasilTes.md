@@ -4,6 +4,7 @@
 | Autentikasi | `login()`                 | Password diverifikasi dengan `check_password_hash()`                                   | ✔️ Login berhasil jika password benar                                  | ![](logincode.png)           | ![](login.jpg)              |
 | Autentikasi | `sendVerificationEmail()` | Email verifikasi dikirim ke user dengan link berisi kode verifikasi unik               | ✔️ Email verifikasi berhasil dikirim ke alamat user                    | ![](verifCode.png)           | ![](verifikasi.png)         |
 | Autentikasi | `dashboard.php`           | Memastikan hanya user yang sudah login dan terverifikasi dapat mengakses dashboard. Data user ditampilkan sesuai `user_id` sesi | ✔️ Hanya user terautentikasi yang dapat mengakses, dan data tampil sesuai user | ![](dasCode.png)             | ![](das.png)          |
-| Autentikasi | reCAPTCHA (client-side JS)  | Validasi bahwa checkbox reCAPTCHA sudah dicentang sebelum form disubmit              | ✅ Submit dicegah jika checkbox belum dicentang, dan pesan error tampil       |  ![](captchasukses.png)  | Tampilan error "Please complete the captcha" |
-| Autentikasi | reCAPTCHA (server-side PHP) | Setelah form dikirim, token dikirim ke Google reCAPTCHA dan hasil validasi diperiksa | ✅ Server menolak jika token tidak valid, dan hanya menerima request yang sah | PHP curl ke Google & validasi \$response\[‘success’] | Halaman login reload dengan pesan error      |
+| Autentikasi | reCAPTCHA (gabung) | Validasi captcha dilakukan di sisi klien sebelum submit, dan diverifikasi ulang di server dengan mengirim token ke Google | ✅ Submit dicegah jika checkbox belum dicentang<br>✅ Server menolak jika token tidak valid atau kosong | JS: grecaptcha.getResponse()<br>PHP: verifikasi token via curl | Pesan error "Please complete captcha" & reload |
+
+
 
