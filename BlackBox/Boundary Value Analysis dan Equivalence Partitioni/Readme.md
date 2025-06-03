@@ -31,7 +31,7 @@ Dokumentasi ini berisi pengujian terhadap fitur-fitur utama sistem, terdiri dari
 
 ### 🔑 Halaman Login
 
-| No   | Fitur yang Diuji         | Input                         | Langkah Uji                                             | Hasil Diharapkan                                 | Hasil Aktual                                     | Status |
+| No   | Fitur yang Diuji         | Input                         | Langkah Uji                                             | Hasil Diharapkan                                 | Hasil Aktual | Status | Screenshot |
 |------|--------------------------|-------------------------------|----------------------------------------------------------|--------------------------------------------------|--------------------------------------------------|--------|
 | B01  | Halaman Login            | Username dan password valid               | Input username dan password valid                                   | Membuka halaman “Register”                       | Halaman “Register” terbuka                       | Lulus  |![Image](https://github.com/user-attachments/assets/b1534d38-c372-48a2-b804-99833df1414e) | 
 | B02  | Halaman Login            | Tombol “Forgot Password”      | Klik tombol “Forgot Password”                            | Membuka halaman “Forgot Password”                | Halaman “Forgot Password” terbuka                | Lulus  |
