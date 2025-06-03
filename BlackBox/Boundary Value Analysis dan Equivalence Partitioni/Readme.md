@@ -11,14 +11,15 @@ Dokumentasi ini berisi pengujian terhadap fitur-fitur utama sistem, terdiri dari
 
 ### 🔐 Registrasi
 
-| No   | Fitur yang Diuji        | Input               | Langkah Uji                                | Hasil Diharapkan                         | Hasil Aktual                               | Status |
-|------|--------------------------|---------------------|---------------------------------------------|-------------------------------------------|---------------------------------------------|--------|
-| A01  | Registrasi - Full Name   | padjrin fauzi       | Memasukkan nama "padjrin"                   | Nama dapat diinput                        | Nama dapat diinput                          | Lulus  |
+|NO|Fitur yang Diuji   | Input             | Langkah Uji           | Hasil Diharapkan              | Hasil Aktual                               | Status |
+|--|-------------------|-------------------|-----------------------|-------------------------------|--------------------------------------------|--------|
+|A01| Registrasi - Full Name|padjrin fauzI| Memasukkan nama "padjrin"    | Nama dapat diinput      | Nama dapat diinput                             | Lulus  |
 | A02  | Registrasi - Email       | padjrinf@gmail.com  | Menginput email dengan format benar         | Email dapat diinput                       | Email dapat diinput                         | Lulus  |
 | A04  | Registrasi - Address     | Bandung             | Menginput alamat                            | Alamat dapat diinput                      | Alamat dapat diinput                        | Lulus  |
 | A05  | Registrasi - Phone Number| 095326163183        | Menginput nomor HP                          | Nomor HP dapat diinput                    | Nomor HP dapat diinput                      | Lulus  |
 | A06  | Registrasi - Username    | ajin                | Menginput username                          | Username dapat diinput                    | Username dapat diinput                      | Lulus  |
 | A07  | Registrasi - Password    | 12345               | Menginput password                          | Password dapat diinput                    | Password dapat diinput                      | Lulus  |
+|A08   
 | A08  | Registrasi - Halaman     | -                   | Memasuki halaman membuat akun               | Halaman membuat akun dapat diakses        | Halaman membuat akun dapat diakses          | Lulus  |
 
 ---
