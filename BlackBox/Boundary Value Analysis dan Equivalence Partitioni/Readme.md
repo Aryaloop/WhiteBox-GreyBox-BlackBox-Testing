@@ -1,3 +1,94 @@
+# 🔍 Laporan Pengujian Sistem Pengaduan Sarana dan Prasarana
+
+Dokumentasi ini berisi pengujian terhadap fitur-fitur utama sistem, terdiri dari dua metode:
+
+- **Behavior Testing** – menguji perilaku aktual fitur sesuai ekspektasi.
+- **Equivalence Partitioning** – menguji input berdasarkan kelas valid/invalid.
+
+---
+
+## ✅ 1. Behavior Testing
+
+### 🔐 Registrasi
+
+| No   | Fitur yang Diuji        | Input               | Langkah Uji                                | Hasil Diharapkan                         | Hasil Aktual                               | Status |
+|------|--------------------------|---------------------|---------------------------------------------|-------------------------------------------|---------------------------------------------|--------|
+| A01  | Registrasi - Full Name   | padjrin fauzi       | Memasukkan nama "padjrin"                   | Nama dapat diinput                        | Nama dapat diinput                          | Lulus  |
+| A02  | Registrasi - Email       | padjrinf@gmail.com  | Menginput email dengan format benar         | Email dapat diinput                       | Email dapat diinput                         | Lulus  |
+| A04  | Registrasi - Address     | Bandung             | Menginput alamat                            | Alamat dapat diinput                      | Alamat dapat diinput                        | Lulus  |
+| A05  | Registrasi - Phone Number| 095326163183        | Menginput nomor HP                          | Nomor HP dapat diinput                    | Nomor HP dapat diinput                      | Lulus  |
+| A06  | Registrasi - Username    | ajin                | Menginput username                          | Username dapat diinput                    | Username dapat diinput                      | Lulus  |
+| A07  | Registrasi - Password    | 12345               | Menginput password                          | Password dapat diinput                    | Password dapat diinput                      | Lulus  |
+| A08  | Registrasi - Halaman     | -                   | Memasuki halaman membuat akun               | Halaman membuat akun dapat diakses        | Halaman membuat akun dapat diakses          | Lulus  |
+
+---
+
+### 🔑 Halaman Login
+
+| No   | Fitur yang Diuji         | Input                         | Langkah Uji                                             | Hasil Diharapkan                                 | Hasil Aktual                                     | Status |
+|------|--------------------------|-------------------------------|----------------------------------------------------------|--------------------------------------------------|--------------------------------------------------|--------|
+| B01  | Halaman Login            | Tombol Register               | Klik tombol “Register”                                   | Membuka halaman “Register”                       | Halaman “Register” terbuka                       | Lulus  |
+| B02  | Halaman Login            | Tombol “Forgot Password”      | Klik tombol “Forgot Password”                            | Membuka halaman “Forgot Password”                | Halaman “Forgot Password” terbuka                | Lulus  |
+| B03  | Halaman Login            | Form Username & Password      | Input dengan username & password valid, klik login       | Masuk ke dashboard                               | Masuk ke dashboard                               | Lulus  |
+
+---
+
+### 🔐 Fitur Lupa Password
+
+| No   | Fitur yang Diuji           | Input             | Langkah Uji                                | Hasil Diharapkan                                         | Hasil Aktual                                           | Status |
+|------|----------------------------|-------------------|---------------------------------------------|----------------------------------------------------------|--------------------------------------------------------|--------|
+| C01  | Halaman Forgot Password    | Klik tombol       | Klik tombol “Send Reset Link”               | Tautan reset dikirim ke email                            | Tautan reset dikirim ke email                          | Lulus  |
+| C02  | Halaman Reset Password     | 12345678          | Input form new password                     | Password berhasil diinput dan disimpan                   | Password berhasil diinput dan disimpan                 | Lulus  |
+
+---
+
+### 📊 Fitur Sistem
+
+| Fitur yang Diuji       | Input / Data Uji      | Langkah Uji                                                       | Hasil Diharapkan                                             | Hasil Aktual | Status |
+|------------------------|------------------------|--------------------------------------------------------------------|---------------------------------------------------------------|--------------|--------|
+| Dashboard              | -                      | Klik menu “Dashboard” setelah login                               | Halaman dashboard tampil dengan daftar film populer           | Sesuai       | ✔️     |
+| Profile View           | -                      | Klik menu “Profile”                                               | Halaman profil tampil (nama, username, foto)                 | Sesuai       | ✔️     |
+| Edit Profile           | Nama: Padjrin Fauzi    | Klik 'Edit Profile', ubah nama, klik simpan                       | Data diperbarui di profil                                     | Sesuai       | ✔️     |
+| Logout                 | -                      | Klik tombol 'Logout'                                              | Kembali ke halaman login                                     | Sesuai       | ✔️     |
+| Pencarian Film         | Minecraft              | Ketik "Minecraft" dan tekan tombol search                         | Film "A Minecraft Movie" muncul                              | Sesuai       | ✔️     |
+| Pencarian Kosong       | xyzabc                 | Masukkan kata kunci tidak cocok film manapun                      | Tampil "tidak ditemukan"                                     | Sesuai       | ✔️     |
+| Rating Film            | Film dengan rating < 6 | Cek tampilan rating (misal: 5.3)                                   | Rating tampil dengan ikon bintang                            | Sesuai       | ✔️     |
+| Tahun Film Validasi    | Tahun: 2025            | Cek tampilan tahun film                                           | Tahun rilis ditampilkan di bawah judul                       | Sesuai       | ✔️     |
+| Gambar Film            | -                      | Lihat semua poster di dashboard                                   | Semua gambar proporsional dan tampil jelas                   | Sesuai       | ✔️     |
+| Gagal Login Redirect   | -                      | Akses `/dashboard.php` tanpa login                                | Dialihkan ke halaman login                                   | Sesuai       | ✔️     |
+
+---
+
+## 📚 2. Equivalence Partitioning (EP)
+
+### 📧 Registrasi - Email Validation
+
+| No | Input                   | Kategori         | Ekspektasi                      | Hasil Aktual                       | Status |
+|----|--------------------------|------------------|----------------------------------|------------------------------------|--------|
+| E01| `padjrinf@gmail.com`    | Valid Email      | Diterima oleh sistem             | Email diterima                     | Lulus  |
+| E02| `padjrinfgmail.com`     | Invalid (tanpa @)| Ditolak oleh sistem              | Muncul pesan “please include an @”| Lulus  |
+
+---
+
+### 🔢 Registrasi - Nomor Telepon
+
+| No | Input         | Kategori           | Ekspektasi                       | Hasil Aktual           | Status |
+|----|----------------|--------------------|-----------------------------------|--------------------------|--------|
+| E03| `095326163183` | Valid (numeric)    | Diterima oleh sistem              | Nomor diterima           | Lulus  |
+| E04| `08abcde123`   | Invalid (alfanumerik)| Ditolak oleh sistem              | Tidak diterima / error   | Lulus  |
+
+---
+
+### 🔑 Registrasi - Password Panjang
+
+| No | Input         | Kategori         | Ekspektasi                             | Hasil Aktual           | Status |
+|----|----------------|------------------|-----------------------------------------|--------------------------|--------|
+| E05| `12345`        | Valid (cukup panjang) | Diterima                               | Diterima                 | Lulus  |
+| E06| `123`          | Invalid (terlalu pendek) | Ditolak                             | Ditolak (minimal char)   | Lulus  |
+
+---
+
+
 
 
 # Registrasi
