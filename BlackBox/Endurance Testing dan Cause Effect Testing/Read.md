@@ -6,6 +6,7 @@ Berikut adalah pengujian perangkat lunak untuk sistem autentikasi berbasis PHP b
 ---
 
 ## 🔵 Endurance Testing
+Endurance Testing (juga disebut Soak Testing) adalah jenis pengujian non-fungsional yang bertujuan untuk mengevaluasi kinerja suatu sistem saat digunakan terus-menerus dalam periode waktu yang panjang.
 
 | No | Skenario                                                                | Input/Simulasi                             | Ekspektasi                                                          | Status |
 | -- | ----------------------------------------------------------------------- | ------------------------------------------ | ------------------------------------------------------------------- | ------ |
@@ -18,7 +19,7 @@ Berikut adalah pengujian perangkat lunak untuk sistem autentikasi berbasis PHP b
 ---
 
 ## 🟡 Cause Effect Testing
-
+Cause Effect Testing adalah metode pengujian berbasis logika, di mana kita menganalisis hubungan antara penyebab (input/kondisi) dan akibat (output/respons sistem). Teknik ini sering digunakan dalam pengujian fungsional.
 | No | Cause (Input/Kondisi)                                         | Effect (Output/Respons yang Diharapkan)     | Skenario                  | Input/Simulasi                    | Status |
 | -- | ------------------------------------------------------------- | ------------------------------------------- | ------------------------- | --------------------------------- | ------ |
 | 1  | Username/email dan password valid (login.php)                 | Arahkan ke dashboard.php                    | Login user                | Input akun valid                  | Pass   |
@@ -32,4 +33,3 @@ Berikut adalah pengujian perangkat lunak untuk sistem autentikasi berbasis PHP b
 
 ---
 
-Jika Anda memerlukan format file Markdown ini dalam bentuk .md file untuk disimpan atau digunakan dalam dokumentasi proyek, silakan beri tahu saya.
