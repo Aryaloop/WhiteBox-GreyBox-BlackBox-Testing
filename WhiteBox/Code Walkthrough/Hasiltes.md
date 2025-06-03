@@ -1,4 +1,4 @@
-| No | File                | Fitur Unik / Istimewa                      | Cuplikan / Penjelasan                                                   | Analisis Singkat                                                                 |
+| No | File                | Fitur / Bagian                      | Cuplikan / Penjelasan                                                   | Analisis Singkat                                                                 |
 |----|---------------------|--------------------------------------------|-------------------------------------------------------------------------|----------------------------------------------------------------------------------|
 | 1  | config.php          | 🔒 Session Aman (`strict_mode`)            | `session_start(['cookie_httponly' => true, 'use_strict_mode' => true])` | ✅ Melindungi sesi dari fixation & hijacking.                                     |
 | 2  | config.php          | 🌍 TMDB API Setup                          | `define('TMDB_API_KEY', ...)`                                           | Untuk fitur film (belum terlihat dipakai).                                       |
