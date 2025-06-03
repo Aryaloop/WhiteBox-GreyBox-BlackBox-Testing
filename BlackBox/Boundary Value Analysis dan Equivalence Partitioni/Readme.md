@@ -12,7 +12,7 @@ Dokumentasi ini berisi pengujian terhadap fitur-fitur utama sistem, terdiri dari
 ### 🔐 Registrasi
 
 |NO|Fitur yang Diuji   | Input             | Langkah Uji           | Hasil Diharapkan              | Hasil Aktual                               | Status |Screenshot|
-|--|-------------------|-------------------|-----------------------|-------------------------------|--------------------------------------------|--------|---|
+|--|-------------------|-------------------|-----------------------|-------------------------------|--------------------------------------------|--------|
 |A01| Registrasi - Full Name|Name > 25 karakter| Memasukkan nama > 25 Karakter  | Nama harus 1 - 25 karakter     | Tampil Pesan     Nama harus 1 - 25 karakter                      | Lulus  | ![Image](https://github.com/user-attachments/assets/cd9daeda-7556-49f8-96c8-8c8128c960d7)|
 | A02  | Registrasi - Email       | padjrinf@gmail.com  | Menginput email dengan format benar         | Email dapat diinput                       | Email dapat diinput                         | Lulus  |
 | A04  | Registrasi - Address     | Bandung             | Menginput alamat                            | Alamat dapat diinput                      | Alamat dapat diinput                        | Lulus  |
