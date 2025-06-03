@@ -19,7 +19,7 @@ Dokumentasi ini berisi pengujian terhadap fitur-fitur utama sistem, terdiri dari
 | A05  | Registrasi - Phone Number| 095326163183        | Menginput nomor HP                          | Nomor HP dapat diinput                    | Nomor HP dapat diinput                      | Lulus  |
 | A06  | Registrasi - Username    | ajin                | Menginput username                          | Username dapat diinput                    | Username dapat diinput                      | Lulus  |
 | A07  | Registrasi - Password    | 12345               | Menginput password                          | Password dapat diinput                    | Password dapat diinput                      | Lulus  |
-|A08   
+| A08  | Registrasi - password    | -                   | Mohon diisi password terlebih dahulu        | Password harus diisi                      | Tidak lulus
 | A08  | Registrasi - Halaman     | -                   | Memasuki halaman membuat akun               | Halaman membuat akun dapat diakses        | Halaman membuat akun dapat diakses          | Lulus  |
 
 ---
