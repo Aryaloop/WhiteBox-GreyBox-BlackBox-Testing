@@ -35,7 +35,7 @@ Dokumentasi ini berisi pengujian terhadap fitur-fitur utama sistem, terdiri dari
 |------|--------------------------|-------------------------------|----------------------------------------------------------|--------------------------------------------------|--------------------------------------------------|--------|---|
 | B01  | Halaman Login            | Username dan password valid               | Input username dan password valid                                   | Membuka halaman “Register”                       | Halaman “Register” terbuka                       | Lulus  |![Image](https://github.com/user-attachments/assets/b1534d38-c372-48a2-b804-99833df1414e) | 
 | B02  | Halaman Login            | Username dan password invalid     | Memasuk form isi yang salah                           | Gagal password salah                | Salah memasukkan password              | Lulus  | ![Image](https://github.com/user-attachments/assets/0090efa6-8079-489d-98e6-3f04aa53e170)
-| B03  | Halaman Login            | Form Username & Password      | Input dengan username & password valid, klik login       | Masuk ke dashboard                               | Masuk ke dashboard                               | Lulus  |
+| B03  | Halaman Login            | Tidak Mengisi capcha    | Menginput capcha       | Mengisi form tanpa mengklik capcha                               |      Mohon mengklik capcha sebelum mengsubmit                         | Lulus  | ![Image](https://github.com/user-attachments/assets/d0981105-0e4e-401e-8bb6-b321cb709dfb)
 
 ---
 
