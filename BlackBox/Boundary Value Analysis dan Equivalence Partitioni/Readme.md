@@ -25,8 +25,7 @@ Dokumentasi ini berisi pengujian terhadap fitur-fitur utama sistem, terdiri dari
 | A10  | Registrasi - Username    |              | Menginput username < 20 karakter         | Username tidak dapat diinput                    | Username tidak dapat diinput                      | Lulus  | ![Image](https://github.com/user-attachments/assets/002837c3-4237-42f7-b93c-4c2961750045) |
 | A11  | Registrasi - Password    | Ajin123@               | Menginput password                          | Password dapat diinput                    | Password dapat diinput                      | Lulus  | ![Image](https://github.com/user-attachments/assets/ea4f48ac-1f97-41aa-b64a-2ce314fc9e9f) |
 | A12  | Registrasi - Password    | ajin123              | Menginput password harus mengandung huruf besar, angka, dan simbol.         | Password tidak dapat diinput                    | Password tidak dapat diinput                      | Lulus  |![Image](https://github.com/user-attachments/assets/92cab1b6-b7c0-4649-95c8-665568701f0c) |
-| A08  | Registrasi - password    | -                   | Mohon diisi password terlebih dahulu        | Password harus diisi                      | Tidak lulus
-| A09  | Registrasi - Halaman     | -                   | Memasuki halaman membuat akun               | Halaman membuat akun dapat diakses        | Halaman membuat akun dapat diakses          | Lulus  |
+
 
 ---
 
@@ -34,7 +33,7 @@ Dokumentasi ini berisi pengujian terhadap fitur-fitur utama sistem, terdiri dari
 
 | No   | Fitur yang Diuji         | Input                         | Langkah Uji                                             | Hasil Diharapkan                                 | Hasil Aktual                                     | Status |
 |------|--------------------------|-------------------------------|----------------------------------------------------------|--------------------------------------------------|--------------------------------------------------|--------|
-| B01  | Halaman Login            | Tombol Register               | Klik tombol “Register”                                   | Membuka halaman “Register”                       | Halaman “Register” terbuka                       | Lulus  |
+| B01  | Halaman Login            | Username dan password valid               | Input username dan password valid                                   | Membuka halaman “Register”                       | Halaman “Register” terbuka                       | Lulus  |![Image](https://github.com/user-attachments/assets/b1534d38-c372-48a2-b804-99833df1414e) | 
 | B02  | Halaman Login            | Tombol “Forgot Password”      | Klik tombol “Forgot Password”                            | Membuka halaman “Forgot Password”                | Halaman “Forgot Password” terbuka                | Lulus  |
 | B03  | Halaman Login            | Form Username & Password      | Input dengan username & password valid, klik login       | Masuk ke dashboard                               | Masuk ke dashboard                               | Lulus  |
 
