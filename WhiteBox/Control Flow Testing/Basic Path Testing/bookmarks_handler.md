@@ -1,6 +1,6 @@
 ## Fungsi bookmarks_handler
 
-```
+```php
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (empty($_POST['title']) || empty($_POST['url'])) {
         $_SESSION['error'] = 'Semua field harus diisi.';
