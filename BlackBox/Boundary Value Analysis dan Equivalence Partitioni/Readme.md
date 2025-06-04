@@ -5,7 +5,7 @@ Dokumentasi ini berisi pengujian terhadap fitur-fitur utama sistem, terdiri dari
 
 ---
 
-## ✅ 1. Behavior Testing
+## ✅ 1. Boundary Value Analysis dan Equivalence Partitioning
 
 ### 🔐 Registrasi
 
