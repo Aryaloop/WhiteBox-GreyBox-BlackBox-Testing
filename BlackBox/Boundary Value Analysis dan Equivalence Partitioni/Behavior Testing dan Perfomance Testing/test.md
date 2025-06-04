@@ -3,7 +3,7 @@
 ## 1. Behavior Testing 
 Behavioral testing, atau pengujian berbasis perilaku, adalah pendekatan pengujian perangkat lunak yang fokus pada bagaimana perangkat lunak berperilaku di bawah berbagai kondisi dan skenario. Ini sering disebut juga sebagai pengujian black box karena penguji tidak perlu melihat struktur kode internal perangkat lunak. 
 
-|No| Fitur | BDD (Given - When - Then)|Flowchart|
+|No| Fitur | BDD (Given - When - Then)|Flowchart|  
 |---|------|-------------------------------------|
 |1|  | -|-|
 
