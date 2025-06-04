@@ -24,10 +24,10 @@ Performance testing adalah jenis pengujian perangkat lunak yang bertujuan untuk 
 | 2   | Login Pengguna      |![image](https://github.com/user-attachments/assets/35b340ed-113a-4467-88ec-e953bfce4927)|
 | 3   | Dashboard           |![image](https://github.com/user-attachments/assets/8ea8df6d-21bf-4eac-bd53-2457a51f5017)|
 | 4   | Bookmark        | ![image](https://github.com/user-attachments/assets/2707e117-2fa3-4837-98d6-abe5cd16e2e5)|
-| 5   | Profile  |  |
-| 6   | Change Password  |  |
-| 7   | Forgot Password  |  |
-| 8   | Reset Password  |  |
+| 5   | Profile  | ![image](https://github.com/user-attachments/assets/e591305a-e131-475c-a4c1-d69088960fe5)|
+| 6   | Change Password  | ![image](https://github.com/user-attachments/assets/5ed60441-f4b3-4fbd-aea9-ddc17824d4c9)|
+| 7   | Forgot Password  | ![image](https://github.com/user-attachments/assets/81def9b0-2107-428e-ad1e-17d5bedfc2cf)|
+| 8   | Reset Password  | ![image](https://github.com/user-attachments/assets/cb9a3897-6130-4cbd-8595-c33ee76ac955)|
 
 
 
