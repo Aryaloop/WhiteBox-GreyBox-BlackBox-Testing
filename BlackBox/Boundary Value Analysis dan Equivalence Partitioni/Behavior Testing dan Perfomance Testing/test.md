@@ -6,10 +6,11 @@ Behavioral testing, atau pengujian berbasis perilaku, adalah pendekatan pengujia
 | No | Fitur               | BDD (Given - When - Then)                                                                 |Flowchart |
 |----|---------------------|--------------------------------------------------------------------------------------------|---|
 | 1  | Registrasi Akun     | Given pengguna belum memiliki akun, When pengguna mengisi form dan submit, Then data disimpan dan email verifikasi dikirim |![Image](https://github.com/user-attachments/assets/d1b0cd90-6b75-4dfe-bc20-693e1239b6d9)|
-| 2  | Verifikasi Email    | Given pengguna menerima email verifikasi, When pengguna klik link, Then status akun menjadi terverifikasi |
-| 3  | Login               | Given pengguna telah terverifikasi, When login dengan email dan password valid, Then pengguna masuk ke dashboard |
-| 4  | Logout              | Given pengguna sudah login, When klik tombol logout, Then sesi dihancurkan dan diarahkan ke halaman login |
-| 5  | Tambah Bookmark     | Given pengguna di dashboard, When mengisi form bookmark dan submit, Then data disimpan ke database |
+| 2  | Verifikasi Email    | Given pengguna menerima email verifikasi, When pengguna klik link, Then status akun menjadi terverifikasi |![Image](https://github.com/user-attachments/assets/52174c4c-abcb-41fd-befe-4b9af77a289d)|
+| 3  | Login               | Given pengguna telah terverifikasi, When login dengan email dan password valid, Then pengguna masuk ke dashboard |![Image](https://github.com/user-attachments/assets/8eaf3bdd-6e01-4b29-8fb8-665213c0e3a0)|
+| 4  | Logout              | Given pengguna sudah login, When klik tombol logout, Then sesi dihancurkan dan diarahkan ke halaman login |![Image](https://github.com/user-attachments/assets/e01b60fe-7be5-4b29-a9ce-cfb309be5fa0)
+|
+| 5  | Tambah Bookmark     | Given pengguna di dashboard, When mengisi form bookmark dan submit, Then data disimpan ke database |![Image](https://github.com/user-attachments/assets/9d15bd23-1eab-4a35-bb83-e860ca5dcc0c)|
 | 6  | Lihat Bookmark      | Given pengguna di dashboard, When halaman dimuat, Then tampilkan semua bookmark dari user tersebut |
 | 7  | Hapus Bookmark      | Given bookmark tersedia, When pengguna klik hapus, Then bookmark dihapus dari database |
 
