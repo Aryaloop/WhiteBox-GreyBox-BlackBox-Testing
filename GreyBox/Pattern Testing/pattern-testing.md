@@ -1,0 +1,9 @@
+| Field    | Input          | Result |
+| -------- | -------------- | ------ |
+| Email    | `user@abc.com` | ✅      |
+| Email    | `user.com`     | ❌      |
+| Username | `user_name1`   | ✅      |
+| Username | `user!name`    | ❌      |
+| Password | `abc123`       | ❌      |
+| Phone    | `081234567890` | ✅      |
+| Phone    | `08abc567`     | ❌      |
