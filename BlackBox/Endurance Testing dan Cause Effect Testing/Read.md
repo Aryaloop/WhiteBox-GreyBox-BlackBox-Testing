@@ -10,11 +10,11 @@ Endurance Testing (juga disebut Soak Testing) adalah jenis pengujian non-fungsio
 
 | No | Skenario                                                                | Input/Simulasi                             | Ekspektasi                                                          | Status |
 | -- | ----------------------------------------------------------------------- | ------------------------------------------ | ------------------------------------------------------------------- | ------ |
-| 1  | Login selama 2 jam terus-menerus setiap 30 detik                        | Simulasi login berulang dengan akun valid  | Tidak ada penurunan performa, tidak logout otomatis, respon stabil  | Pass   |
-| 2  | Permintaan `forgot-password` berulang tiap 1 menit selama 1 jam         | Email valid dikirim terus-menerus          | Sistem tetap merespon email reset password tanpa crash              | Pass   |
+| 1  | Login selama 2 jam terus-menerus setiap 30 detik                        | Simulasi login berulang dengan akun valid  | Tidak ada penurunan performa, tidak logout otomatis, respon stabil  | Perli di Uji   |
+| 2  | Permintaan `forgot-password` berulang tiap 1 menit selama 1 jam         | Email valid dikirim terus-menerus          | Sistem tetap merespon email reset password tanpa crash              | Perli di Uji   |
 | 3  | Buka dashboard (dashboard.php) selama 3 jam tanpa reload                | Tidak ada interaksi aktif dari user        | Sistem tetap aktif (tidak timeout, session masih valid)             | Pass   |
-| 4  | Gagal login 500 kali berturut-turut dalam waktu 1 jam                   | Input username/password salah              | Sistem tidak crash, respon error tetap muncul, tidak lambat         | Pass   |
-| 5  | Simulasi ubah password (change-password.php) terus menerus selama 2 jam | User login, lalu ubah password bolak-balik | Respons tetap cepat, tidak ada kebocoran memori, perubahan berhasil | Pass   |
+| 4  | Gagal login 500 kali berturut-turut dalam waktu 1 jam                   | Input username/password salah              | Sistem tidak crash, respon error tetap muncul, tidak lambat         | Perli di Uji   |
+| 5  | Simulasi ubah password (change-password.php) terus menerus selama 2 jam | User login, lalu ubah password bolak-balik | Respons tetap cepat, tidak ada kebocoran memori, perubahan berhasil | Perli di Uji  |
 
 ---
 
