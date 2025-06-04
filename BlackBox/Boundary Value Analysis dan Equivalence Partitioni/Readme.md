@@ -1,8 +1,6 @@
-# 🔍 Laporan Pengujian Sistem Pengaduan Sarana dan Prasarana
-
 Dokumentasi ini berisi pengujian terhadap fitur-fitur utama sistem, terdiri dari dua metode:
 
-- **Behavior Testing** – menguji perilaku aktual fitur sesuai ekspektasi.
+- **Boundary Value Analysis** – menguji input, min input max input setiap form.
 - **Equivalence Partitioning** – menguji input berdasarkan kelas valid/invalid.
 
 ---
