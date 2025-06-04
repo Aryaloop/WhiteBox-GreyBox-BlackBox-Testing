@@ -21,10 +21,9 @@ Performance testing adalah jenis pengujian perangkat lunak yang bertujuan untuk 
 | No. | Fitur               | Performance Testing                                                                                   |
 |-----|---------------------|--------------------------------------------------------------------------------------------------------|
 | 1   | Registrasi Pengguna | ![Image](https://github.com/user-attachments/assets/d3e7cb0a-c82d-4e3b-be04-b233d925b1d8) |
-| 2   | Login Pengguna      |![image](https://github.com/user-attachments/assets/35b340ed-113a-4467-88ec-e953bfce4927)
-  |
-| 3   | Dashboard           | |
-| 4   | Bookmark        |  |
+| 2   | Login Pengguna      |![image](https://github.com/user-attachments/assets/35b340ed-113a-4467-88ec-e953bfce4927)|
+| 3   | Dashboard           |![image](https://github.com/user-attachments/assets/8ea8df6d-21bf-4eac-bd53-2457a51f5017)|
+| 4   | Bookmark        | ![image](https://github.com/user-attachments/assets/2707e117-2fa3-4837-98d6-abe5cd16e2e5)|
 | 5   | Profile  |  |
 | 6   | Change Password  |  |
 | 7   | Forgot Password  |  |
