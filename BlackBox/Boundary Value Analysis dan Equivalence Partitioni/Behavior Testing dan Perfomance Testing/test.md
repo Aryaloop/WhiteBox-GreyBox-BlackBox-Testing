@@ -5,7 +5,7 @@ Behavioral testing, atau pengujian berbasis perilaku, adalah pendekatan pengujia
 
 |No| Fitur | BDD (Given - When - Then)|Flowchart|
 |---|------|-------------------------------------|
-|1|  | BDD (Given - When - Then)|Flowchart|
+|1|  | -|-|
 
 
 | Fitur yang Diuji       | Input / Data Uji      | Langkah Uji                                                       | Hasil Diharapkan                                             | Hasil Aktual | Status |
@@ -29,8 +29,11 @@ Performance testing adalah jenis pengujian perangkat lunak yang bertujuan untuk 
 | 1   | Registrasi Pengguna |  |
 | 2   | Login Pengguna      |  |
 | 3   | Dashboard           |  |
-| 4   | Detail Tugas        |  |
-| 5   | Daftar Semua Tugas  |  |
+| 4   | Bookmark        |  |
+| 5   | Profile  |  |
+| 6   | Change Password  |  |
+| 7   | Forgot Password  |  |
+| 8   | Reset Password  |  |
 
 
 
