@@ -135,15 +135,36 @@ Dokumentasi ini berisi pengujian terhadap fitur-fitur utama sistem, terdiri dari
 
 ## Hasil Pengujian Fitur Sistem
 
-| Fitur yang Diuji       | Input / Data Uji      | Langkah Uji                                                       | Hasil Diharapkan                                             | Hasil Aktual | Status |
-|------------------------|------------------------|--------------------------------------------------------------------|---------------------------------------------------------------|--------------|--------|
-| Dashboard              | -                      | Klik menu “Dashboard” setelah login                               | Halaman dashboard tampil dengan daftar film populer           | Sesuai       | ✔️     |
-| Profile View           | -                      | Klik menu “Profile”                                               | Halaman profil pengguna tampil (nama, username, foto)         | Sesuai       | ✔️     |
-| Edit Profile           | Nama: Padjrin Fauzi    | Klik tombol 'Edit Profile', ubah nama, klik simpan                | Data berhasil diperbarui dan tampil di profil                 | Sesuai       | ✔️     |
-| Logout                 | -                      | Klik tombol 'Logout'                                              | Pengguna diarahkan ke halaman login                           | Sesuai       | ✔️     |
-| Pencarian Film         | Minecraft              | Ketik 'Minecraft' di kolom pencarian, klik tombol 'Search'        | Film 'A Minecraft Movie' ditampilkan                          | Sesuai       | ✔️     |
-| Pencarian Kosong       | xyzabc                 | Masukkan input pencarian yang tidak sesuai film manapun           | Tampilkan pesan 'tidak ditemukan' atau hasil kosong           | Sesuai       | ✔️     |
-| Rating Film            | Film dengan rating < 6 | Cek tampilan rating (misal: 5.3)                                   | Rating tampil dengan ikon bintang                             | Sesuai       | ✔️     |
-| Tahun Film Validasi    | Tahun: 2025            | Periksa apakah semua film menampilkan tahun rilis                 | Tahun rilis film ditampilkan di bawah judul                   | Sesuai       | ✔️     |
-| Gambar Film            | -                      | Lihat semua poster film pada dashboard                            | Semua gambar film tampil dengan proporsi yang sesuai          | Sesuai       | ✔️     |
-| Gagal Login Redirect   | -                      | Akses URL /dashboard.php tanpa sesi login                         | Dialihkan ke halaman login                                    | Sesuai       | ✔️     |
+# ✅ Hasil Pengujian Fitur Sistem
+
+Pengujian ini dilakukan untuk memastikan seluruh fitur utama sistem bekerja sesuai dengan yang diharapkan berdasarkan spesifikasi. Pengujian dilakukan menggunakan pendekatan black-box (berbasis perilaku pengguna), dengan memverifikasi output terhadap input dan tindakan pengguna.
+
+## 📋 Tabel Pengujian
+
+| **Fitur yang Diuji**    | **Input / Data Uji**     | **Langkah Uji**                                                     | **Hasil Diharapkan**                                               | **Hasil Aktual** | **Status** |
+|-------------------------|--------------------------|----------------------------------------------------------------------|--------------------------------------------------------------------|------------------|------------|
+| Dashboard               | -                        | Klik menu “Dashboard” setelah login                                 | Halaman dashboard tampil dengan daftar film populer               | Sesuai           | ✔️         |
+| Profile View            | -                        | Klik menu “Profile”                                                 | Halaman profil pengguna tampil (nama, username, foto)             | Sesuai           | ✔️         |
+| Edit Profile            | Nama: Padjrin Fauzi      | Klik tombol 'Edit Profile', ubah nama, klik simpan                  | Data berhasil diperbarui dan tampil di profil                     | Sesuai           | ✔️         |
+| Logout                  | -                        | Klik tombol 'Logout'                                                | Pengguna diarahkan ke halaman login                               | Sesuai           | ✔️         |
+| Pencarian Film          | Minecraft                | Ketik 'Minecraft' di kolom pencarian, klik tombol 'Search'          | Film 'A Minecraft Movie' ditampilkan                              | Sesuai           | ✔️         |
+| Pencarian Kosong        | xyzabc                   | Masukkan input pencarian yang tidak sesuai film manapun             | Tampilkan pesan 'tidak ditemukan' atau hasil kosong               | Sesuai           | ✔️         |
+| Rating Film             | Film dengan rating < 6   | Cek tampilan rating (misal: 5.3)                                     | Rating tampil dengan ikon bintang                                 | Sesuai           | ✔️         |
+| Tahun Film Validasi     | Tahun: 2025              | Periksa apakah semua film menampilkan tahun rilis                   | Tahun rilis film ditampilkan di bawah judul                       | Sesuai           | ✔️         |
+| Gambar Film             | -                        | Lihat semua poster film pada dashboard                              | Semua gambar film tampil dengan proporsi yang sesuai              | Sesuai           | ✔️         |
+| Gagal Login Redirect    | -                        | Akses URL `/dashboard.php` tanpa sesi login                         | Pengguna diarahkan otomatis ke halaman login                      | Sesuai           | ✔️         |
+
+---
+
+## 📝 Penjelasan
+
+- **Metode Pengujian**: Menggunakan pendekatan *Black-box testing* untuk mengevaluasi respons sistem terhadap masukan dari pengguna.
+- **Lingkungan Uji**:
+  - Browser: Google Chrome (versi terbaru)
+  - Backend: PHP & MySQL
+  - Koneksi: Stabil, pengujian dilakukan di localhost / server pengembangan
+- **Tujuan**: Untuk mengecek apakah fitur frontend & backend saling terintegrasi dengan baik dan respons sistem sesuai ekspektasi pengguna.
+- **Hasil Umum**: Seluruh fitur utama telah diuji dan **berhasil dijalankan tanpa error atau gangguan.**
+- **Kesimpulan**: Sistem **lulus uji fungsional** dan siap digunakan untuk skenario penggunaan nyata.
+
+
