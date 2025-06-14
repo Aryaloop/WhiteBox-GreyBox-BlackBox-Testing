@@ -18,16 +18,17 @@ Behavioral testing, atau pengujian berbasis perilaku, adalah pendekatan pengujia
 ## 2. Performance Testing
 Performance testing adalah jenis pengujian perangkat lunak yang bertujuan untuk mengevaluasi kinerja, stabilitas, dan skalabilitas sistem di bawah beban kerja tertentu. Pengujian ini membantu mengidentifikasi botol leher, mengukur responsivitas sistem, dan memastikan bahwa aplikasi dapat menangani jumlah pengguna yang diharapkan tanpa penurunan performa yang signifikan. 
 
-| No. | Fitur               | Performance Testing                                                                                   |
-|-----|---------------------|--------------------------------------------------------------------------------------------------------|
-| 1   | Registrasi Pengguna |  |
-| 2   | Login Pengguna      |  |
-| 3   | Dashboard           |  |
-| 4   | Bookmark        |  |
-| 5   | Profile  |  |
-| 6   | Change Password  |  |
-| 7   | Forgot Password  |  |
-| 8   | Reset Password  |  |
+| No. | Fitur               | Skenario Performance Testing                                                                                   |
+|-----|---------------------|------------------------------------------------------------------------------------------------------------------|
+| 1   | Registrasi Pengguna | Simulasikan 100 pengguna mendaftar secara bersamaan. Sistem harus merespons dalam waktu ≤ 2 detik per request tanpa error. |
+| 2   | Login Pengguna      | Uji 200 pengguna login secara bersamaan. Server harus mampu memproses login dalam waktu ≤ 1,5 detik per pengguna.     |
+| 3   | Dashboard           | Uji waktu pemuatan dashboard untuk 150 pengguna serentak. Semua konten harus tampil dalam waktu ≤ 2 detik.             |
+| 4   | Bookmark            | Simulasi 100 pengguna menambahkan bookmark bersamaan. Sistem harus menyimpan data tanpa kehilangan/duplikasi dalam waktu ≤ 1,5 detik. |
+| 5   | Profile             | Uji akses dan update data profil oleh 80 pengguna secara bersamaan. Tidak boleh ada delay lebih dari 2 detik.          |
+| 6   | Change Password     | Simulasi 50 pengguna mengubah kata sandi dalam waktu berdekatan. Sistem harus memproses dan mengirim notifikasi sukses dalam ≤ 2 detik. |
+| 7   | Forgot Password     | Uji permintaan lupa password oleh 70 pengguna sekaligus. Email reset harus dikirim maksimal dalam waktu 3 detik.       |
+| 8   | Reset Password      | Simulasikan 70 pengguna melakukan reset password dengan link email. Validasi dan penggantian password harus selesai dalam ≤ 2 detik. |
+
 
 
 
