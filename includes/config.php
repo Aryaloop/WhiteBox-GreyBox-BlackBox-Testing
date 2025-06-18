@@ -19,7 +19,7 @@ if ($conn->connect_error) {
 }
 
 // TMDB Configuration
-define('TMDB_API_KEY', '3097f4aed12eb128588745df1a12a5f0');
+define('TMDB_API_KEY', '');
 define('TMDB_BASE_URL', 'https://api.themoviedb.org/3');
 define('TMDB_IMAGE_URL', 'https://image.tmdb.org/t/p/w500');
 
@@ -42,7 +42,7 @@ function sendPasswordResetEmail($email, $reset_token) {
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
         $mail->Username = 'aryaabdulmughni@gmail.com';
-        $mail->Password = 'yxaqmyiopxxhxymt';
+        $mail->Password = ''; //Perlu di isi 
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
 
