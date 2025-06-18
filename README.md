@@ -90,7 +90,7 @@ $dbname = "movie_app"; // sesuaikan dengan nama database
 - Klik **Create API Key** dan isi formulir
 - Salin **API Key v3**
 
-Buka file `includes/tmdb_config.php` dan tambahkan API Key:
+Buka file `includes/config.php dan includes/auth.php` dan tambahkan API Key:
 
 ```php
 $apiKey = 'YOUR_API_KEY_HERE';
@@ -101,7 +101,7 @@ $apiKey = 'YOUR_API_KEY_HERE';
 Jika belum terinstal, ikuti langkah berikut:
 
 - Unduh PHPMailer dari: [https://github.com/PHPMailer/PHPMailer/releases](https://github.com/PHPMailer/PHPMailer/releases)
-- Ekstrak ke folder `includes/PHPMailer/`
+- Ekstrak ke folder proyek
 
 Contoh penggunaan:
 
