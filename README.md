@@ -12,7 +12,7 @@ Proyek ini adalah simulasi sistem pengujian web berbasis PHP yang menggunakan AP
 | Pikri Nabila Mulia      | Penguji GreyBox     |
 
 ## 🚀 Fitur yang Digunakan
-
+- ✅ Menambah keamanan dalam serangan brute force menggunakan **reCHAPTHA**  
 - ✅ Mengirim email dengan **PHPMailer**
 - ✅ Integrasi **TMDB API** untuk menampilkan film
 - ✅ Dibangun dengan **PHP Native**
