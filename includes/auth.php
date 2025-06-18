@@ -57,7 +57,7 @@ function sendVerificationEmail($toEmail, $verificationCode)
         $mail->Host = 'smtp.gmail.com'; // SMTP server Gmail
         $mail->SMTPAuth = true;
         $mail->Username = 'aryaabdulmughni18@gmail.com'; // Ganti dengan email kamu
-        $mail->Password = 'yxaqmyiopxxhxymt'; // Ganti dengan app password kamu
+        $mail->Password = ''; // Ganti dengan app password kamu
         $mail->SMTPSecure = 'tls';
         $mail->Port = 587;
 
@@ -134,7 +134,7 @@ function forgotPassword($conn, $email)
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
         $mail->Username = 'aryaabdulmughni18@gmail.com';
-        $mail->Password = 'yxaqmyiopxxhxymt';
+        $mail->Password = '';
         $mail->SMTPSecure = 'tls';
         $mail->Port = 587;
 
